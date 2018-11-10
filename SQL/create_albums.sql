@@ -1,0 +1,31 @@
+USE [musicstore]
+GO
+
+/****** Object:  Table [dbo].[Albums]    Script Date: 10/11/2018 17:44:11 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Albums](
+[ID] [int] IDENTITY(100000,1) NOT NULL,
+[Title] [varchar](100) NOT NULL,
+[Artist] [varchar](100) NOT NULL,
+[Year] datetime NOT NULL,
+ CONSTRAINT [PK_Albums] PRIMARY KEY CLUSTERED 
+(
+[Title] ASC,
+[Artist] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

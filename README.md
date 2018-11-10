@@ -7,7 +7,7 @@ Grab the article at [https://medium.com/@maumribeiro/a-fullstack-epic-part-i-a-r
 
 * Run `rundll32 sysdm.cpl,EditEnvironmentVariables` in PowerShell, under PATH in System variables add the "bin" directory-path for where the 'mongod' service is located (e.g. C:\Program Files\MongoDB\Server\4.0\bin)
 * Run the `mongod` command to initiate a CLI version of the mongo
-* I ran into TypeScript problems early on executing SQL within JavaScript on mongod/mongo, switched the project to SQL Server instead...
+* I ran into TypeScript problems - `[ts] ';' expected. [1005]` - early on executing SQL within JavaScript on mongod/mongo, switched the project to SQL Server instead...
 
 ## What's it all about?
 

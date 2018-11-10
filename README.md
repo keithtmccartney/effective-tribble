@@ -5,7 +5,8 @@ Grab the article at [https://medium.com/@maumribeiro/a-fullstack-epic-part-i-a-r
 
 ## Tips/Run
 
-* ...
+* Run `rundll32 sysdm.cpl,EditEnvironmentVariables` in PowerShell, under PATH in System variables add the "bin" directory-path for where the 'mongod' service is located (e.g. C:\Program Files\MongoDB\Server\4.0\bin)
+* Run the `mongod` command to initiate a CLI version of the mongo
 
 ## What's it all about?
 

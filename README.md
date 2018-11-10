@@ -8,6 +8,7 @@ Grab the article at [https://medium.com/@maumribeiro/a-fullstack-epic-part-i-a-r
 * Run `rundll32 sysdm.cpl,EditEnvironmentVariables` in PowerShell, under PATH in System variables add the "bin" directory-path for where the 'mongod' service is located (e.g. C:\Program Files\MongoDB\Server\4.0\bin)
 * Run the `mongod` command to initiate a CLI version of the mongo
 * I ran into TypeScript problems - `[ts] ';' expected. [1005]` - early on executing SQL within JavaScript on mongod/mongo, switched the project to SQLite instead...
+To get SQLite (3) running I needed to follow this tutorial - [https://medium.com/@yaravind/go-sqlite-on-windows-f91ef2dacfe](https://medium.com/@yaravind/go-sqlite-on-windows-f91ef2dacfe) - it meant installing a GCC tool (theses commands didn't work beforehand: `go get github.com/mattn/go-sqlite3`; they resulted in "exec: "gcc": executable file not found in %PATH%") ([http://tdm-gcc.tdragon.net/download](http://tdm-gcc.tdragon.net/download))
 
 ## What's it all about?
 

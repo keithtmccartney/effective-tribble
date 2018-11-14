@@ -9,6 +9,8 @@ Grab the article at [https://medium.com/@maumribeiro/a-fullstack-epic-part-i-a-r
 * Run the `mongod` command to initiate a CLI version of the mongo
 * I ran into TypeScript problems - `[ts] ';' expected. [1005]` - early on executing SQL within JavaScript on mongod/mongo, switched the project to SQLite instead...
 To get SQLite (3) running I needed to follow this tutorial - [https://medium.com/@yaravind/go-sqlite-on-windows-f91ef2dacfe](https://medium.com/@yaravind/go-sqlite-on-windows-f91ef2dacfe) - it meant installing a GCC tool (theses commands didn't work beforehand: `go get github.com/mattn/go-sqlite3`; they resulted in "exec: "gcc": executable file not found in %PATH%") ([http://tdm-gcc.tdragon.net/download](http://tdm-gcc.tdragon.net/download))
+* Gorilla Routing libraries have been gotten via `$ go get github.com/gorilla/handlers` and `$ go get github.com/gorilla/mux`
+* Getting the mgo library - `$ go get gopkg.in/mgo.v2` - for handling Mongo would've been gotten, however, due to the complications I'm favouring a SQLite version instead
 
 ## What's it all about?
 
